@@ -80,26 +80,28 @@ margin-left: -43px;
 	color:#006600;
 }
 .content{
-	width:1000px;
-	height:632px;
-	margin:16px auto 0px auto;
+	position: relative;
+width: 1000px;
+height: 632px;
+margin: 16px auto 0px auto;
 	background-image:url(../images/content-background.png);
 }
 .content #title{
-	position:relative;
-	top:16px;
-	left:26px;
-	width:100px;
-	height:20px;
-	font-family:微软雅黑;
-	font-size:14px;
-	color:#009900;
+	position: absolute;
+margin-left: 26px;
+margin-top: 15px;
+margin-bottom: auto;
+width: 100px;
+height: 20px;
+font-family: 微软雅黑;
+font-size: 14px;
+color: #009900;
 }
 .content #hint{
 	background-image: url(../images/flag-background.png);
-position: relative;
-left: 8px;
-top: 50px;
+position: absolute;
+margin-left: 8px;
+margin-top: 50px;
 width: 978px;
 height: 32px;
 }
@@ -143,10 +145,19 @@ height:14px;
 	top:245px;
 	left:35px;
 	width:570px;
+	height:351px;
+	font-family:宋体;
+	font-size:12px;
+	color:#666666;
+}
+.contcent form label{
 	font-family:宋体;
 	font-size:12px;
 	color:#666666;
 }
 .content form span{
 	margin-top:-10px;
+}
+.content form #category{
+	width:110px;
 }
