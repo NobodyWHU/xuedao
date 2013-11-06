@@ -9,10 +9,10 @@ $(function() {
         	}
         	str+=tag;
             $('input#tags').attr("value", str);
-            console.log($('input#tags').attr("value"));
+            // console.log($('input#tags').attr("value"));
         },
         onRemoveTag:function(tag){
-            console.log('删除了'+tag)
+            // console.log('删除了'+tag)
             var val = $('input#tags').attr("value");
             if(val.indexOf(tag) == 0){
             	val = val.replace(tag+",","");

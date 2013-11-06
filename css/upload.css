@@ -5,6 +5,13 @@
 	width:1000px;
 	margin:auto;
 }
+ul{
+	list-style: none;
+}
+li{
+	display:inline;
+	float:left;
+}
 .right {
 	margin-left: 590px;
 	margin-top: -74px;
@@ -37,13 +44,10 @@
 }
 .right ul{
 	position: relative;
-	list-style: none;
 	left: 95px;
 	top: -62px;
 }
 .right li{
-	display:inline;
-	float:left;
 	width:55px;
 }
 
@@ -61,14 +65,12 @@ padding-top: 12px;
 
 .nav ul{
 	list-style-type: none;
-margin-top: -20px;
-margin-left: -43px;
+	margin-top: -20px;
+	margin-left: -43px;
 }
 .nav li{
-	display::inline;
 	position:relative;
 	top:10px;
-	float:left;
 }
 .nav li a{
 	display:block;
@@ -83,29 +85,37 @@ margin-left: -43px;
 }
 .content{
 	position: relative;
-width: 1000px;
-height: 632px;
-margin: 16px auto 0px auto;
-	background-image:url(../images/content-background.png);
+	width: 1000px;
+	height: 632px;
+	margin: 16px auto 0px auto;
+	background-color: #F4F4F4
+}
+
+.content #titlediv{
+	position: relative;
+	margin: auto;
+	top: 10px;
+	width: 977px;
+	height: 30px;
+	background-color: #ffffff;
 }
 .content #title{
-	position: absolute;
-margin-left: 26px;
-margin-top: 15px;
-margin-bottom: auto;
-width: 100px;
-height: 20px;
-font-family: 微软雅黑;
-font-size: 14px;
-color: #009900;
+	position: relative;
+	left: 26px;
+	top: 4px;
+	width: 100px;
+	height: 20px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #009900;
 }
 .content #hint{
+	position: relative;
 	background-image: url(../images/flag-background.png);
-position: absolute;
-margin-left: 8px;
-margin-top: 50px;
-width: 978px;
-height: 32px;
+	top: 20px;
+	left: 12px;
+	width: 978px;
+	height: 32px;
 }
 .content img{
 	position:relative;
@@ -115,39 +125,72 @@ height: 32px;
 }
 #hint p{
 	display: inline;
-position: relative;
-margin-left: 20px;
-top: 6px;
+	position: relative;
+	margin-left: 20px;
+	top: 6px;
 }
 .content #filename{
 	position: relative;
-top: 105px;
-left: 46px;
-font-family: 微软雅黑;
-font-size: 15px;
-color: #333333;
+	top: 25px;
+	left: 46px;
+	font-family: 微软雅黑;
+	font-size: 15px;
+	color: #333333;
+}
+.content #progress{
+	width: 648px;
+	height: 32px;
+	position: relative;
+	top: 28px;
+	left: 43px;
+	background-color: #33CC00;
 }
 .content #cancel{
 	position: relative;
-top: 137px;
-left: 890px;
-width:80px;
-height:14px;
+	/*top: 21px;*/
+	left: 890px;
+	width:80px;
+	height:14px;
 }
+.content #uploadinfo{
+	position: relative;
+	top: 10px;
+	width: 648px;
+	height: 14px;
+}
+.content #uploadinfo ul{
+	height: 14px;
+	margin-left: -15px;
+}
+.content #uploadinfo li{
+	width: 150px;
+	margin-left: 20px;
+	font-family: 宋体;
+	font-size: 12px;
+	color: #909090;
+}
+
 .content #docinfo{
 	position:relative;
-	top:208px;
-	left:26px;
+	top:4px;
+	left:9px;
 	font-family:微软雅黑;
 	font-size:14px;
 	color:#009900;
 }
+.content #formdiv{
+	position: relative;
+	top: 12px;
+	left: 13px;
+	width:977px;
+	height: 334px;
+	background-color: #FFFFFF;
+}
 .content form{
 	position:relative;
-	top:245px;
-	left:35px;
+	top:17px;
+	left:22px;
 	width:580px;
-	height:351px;
 	font-family:宋体;
 	font-size:12px;
 	color:#666666;
@@ -169,8 +212,8 @@ margin-top: 16px;
 
 .content form #intro{
 	width: 530px;
-height: 40px;
-margin-top: 16px;
+	height: 40px;
+	margin-top: 16px;
 }
 
 .content form .line{
@@ -202,4 +245,30 @@ margin-top: 16px;
 }
 .content form .waitTags{
 	margin-left: 25px;
+}
+.content form #certainsave{
+	position: relative;
+	top: 60px;
+	left: 36px;
+}
+.content #coverinfo{
+	position: relative;
+	left: 602px;
+	top: -245px;
+	height: 334px;
+	width: 384px;
+}
+
+.content #coverinfo label{
+	margin-left: 36px;
+}
+.content #coverinfo img{
+	width: 220px;
+	height: 155px;
+	margin-left: 85px;
+}
+
+.content #coverinfo .underline{
+	margin-left: 97px;
+	margin-top: 15px;
 }

@@ -66,7 +66,9 @@
 	</div>
 	<!-- end of nav -->
 	<div class="content">
-		<p id="title">上传文档</p>
+		<div id="titlediv">
+			<p id="title">上传文档</p>
+		</div>
 		<div id="hint">
 			<img src="images/icon-amazing.png" />
 			<p>
@@ -74,78 +76,96 @@
 			</p>
 		</div>
 		<p id="filename">沁园春 长沙 课件</p>
+		<div id="progress">
+			进度条
+		</div>
 		<img id="cancel" src="images/cancel.png" />
-		<p id="docinfo">文档信息</p>
-		<form action="#">
-			<label for="biaoti">
-				标题：
-				<input type="text" name="title" style="width:530px" id="biaoti" />
+		<div id="uploadinfo">
+			<ul>
+			<li>上传速度</li>
+			<li>已上传</li>
+			<li>剩余时间</li>
+			</ul>
+		</div>
+		<div id="formdiv">
+			<p id="docinfo">文档信息</p>
+			<form action="#">
+				<label for="biaoti">
+					标题：
+					<input type="text" name="title" style="width:530px" id="biaoti" />
+				</label>
+				<label for="intro">
+					简介：
+					<input id="intro" type="text" name="introduction" />
+				</label >
+				<label for="category">
+					类型：
+					<select class="small" id="category">
+						<option value="ppt">课件</option>
+						<option value="word">word文档</option>
+						<option value="excel">excel表格</option>
+					</select>
+				</label>
+			</br>
+			<label for="subject" >
+				学科：
+				<select class="small" id="subject">
+					<option value="one">英语</option>
+					<option value="two">数学</option>
+				</select>
 			</label>
-			<label for="intro">
-				简介：
-				<input id="intro" type="text" name="introduction" />
-			</label >
-			<label for="category">
-				类型：
-				<select class="small" id="category">
-					<option value="ppt">课件</option>
-					<option value="word">word文档</option>
-					<option value="excel">excel表格</option>
+			<label for="grade" class="line">
+				年级：
+				<select class="small" id="grade">
+					<option value="one">必修一</option>
+					<option value="two">必修二</option>
+				</select>
+
+			</label>
+
+			<label for="version" class="line">
+				教材版本：
+				<select class="small" id="version">
+					<option value="one">必修一</option>
+					<option value="two">必修二</option>
 				</select>
 			</label>
 		</br>
-		<label for="subject" >
-			学科：
-			<select class="small" id="subject">
-				<option value="one">英语</option>
-				<option value="two">数学</option>
+		<label for="chapter" >
+			章节：
+			<select class="small" id="chapter">
+				<option value="one">第一章</option>
+				<option value="two">第二章</option>
 			</select>
 		</label>
-		<label for="grade" class="line">
-			年级：
-			<select class="small" id="grade">
-				<option value="one">必修一</option>
-				<option value="two">必修二</option>
-			</select>
-
-		</label>
-
-		<label for="version" class="line">
-			教材版本：
-			<select class="small" id="version">
-				<option value="one">必修一</option>
-				<option value="two">必修二</option>
-			</select>
-		</label>
-	</br>
-	<label for="chapter" >
-		章节：
-		<select class="small" id="chapter">
-			<option value="one">第一章</option>
-			<option value="two">第二章</option>
+		<select id="section">
+			<option value="first">第一课时</option>
+			<option value="second">第二课时</option>
 		</select>
-	</label>
-	<select id="section">
-		<option value="first">第一课时</option>
-		<option value="second">第二课时</option>
-	</select>
 	</br>
-	<!-- <p>
-	<label for="tags">标签：
-		<input name="tags" type="text" class="tags" id="tags" value="foo,bar,baz">
-	</label>
-	</p> -->
 	<p>
-	<label>标签:
-	<input id="tags" name="tags" type="text" class="tags" value="foo,bar,baz,roffle" />
-	</label>
+		<label>
+			标签:
+			<input id="tags" name="tags" type="text" class="tags" value="foo,bar,baz,roffle" />
+		</label>
 	</p>
 	<span id="accomendent">推荐标签：</span>
 	<span class="waitTags">报告1</span>
 	<span class="waitTags">报告2</span>
 	<span class="waitTags">报告3</span>
 	<span class="waitTags">报告4</span>
+	</br>
+	<input id="certainsave" type="image" src="images/savebutton.png" />
 </form>
+<form id="coverinfo" action="#" enctype="multipart/form-data">
+	<label for="uploadcover">上传封面:
+		<input type="text" id="uploadcover" name="cover" /><button>浏览...</button>
+	</label>
+	<img id="preview" src="" /> 
+	<input class="underline" type="submit" value="确认裁剪并提交" />
+	<button>取消</button>
+</form>
+</div>
 </div>
 <!-- end of content -->
 </body>
