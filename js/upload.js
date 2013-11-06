@@ -27,7 +27,6 @@ $(function() {
 
 $(function() {
     $('span.waitTags').click(function(){
-        console.log('222');
         $('#tags').addTag($(this).text());
     });
 });

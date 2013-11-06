@@ -11,7 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="css/upload.css" />
 	<title>上传文档信息</title>
 </head>
+
 <body background="images/background.png">
+<div id="border"></div>
 	<div id="header">
 		<div id="logo">
 			<img src="images/title.png" />
@@ -21,53 +23,33 @@
 				<img src="images/teacher.png" />
 			</div>
 			<div id="name">
-				<a>王浩然</a>
+				<a herf="#">王浩然</a>
 			</div>
-			<ul>
-				<li>
-					<a>
+					<a class="tool" herf="#">
 						<img id="download" src="images/download.png" />
 					</a>
-				</li>
-				<li>
-					<a>
+					<a class="tool" herf="#">
 						<img id="message" src="images/message.png" />
 					</a>
-				</li>
-				<li>
-					<a>
+					<a class="tool" herf="#">
 						<img id="setting" src="images/setting.png" />
 					</a>
-				</li>
-				<li>
-					<a>
+					<a class="tool" herf="#">
 						<img id="logout" src="images/logout.png" />
 					</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 	<!--  end of header -->
 	<div class="nav">
-		<ul>
-			<li>
-				<a id="choose" style="width:135px">首页</a>
-			</li>
-			<li>
-				<a>家校互动中心</a>
-			</li>
-			<li>
-				<a>教学资源中心</a>
-			</li>
-			<li>
-				<a>管理中心</a>
-			</li>
-		</ul>
+		<span id="choose"><a>首页</a></span>
+		<span class="spanother" id="span2"><a>家校互动中心</a></span>
+		<span class="spanother" id="span3"><a>教学资源中心</a></span>
+		<span class="spanother" id="span4"><a>管理中心</a></span>
 	</div>
 	<!-- end of nav -->
 	<div class="content">
 		<div id="titlediv">
-			<p id="title">上传文档</p>
+			<span id="title">上传文档</span>
 		</div>
 		<div id="hint">
 			<img src="images/icon-amazing.png" />

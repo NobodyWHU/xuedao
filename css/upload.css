@@ -1,8 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+	margin: auto;
+}
 #header {
 	width:1000px;
+	height: 94px;
 	margin:auto;
 }
 ul{
@@ -12,9 +16,16 @@ li{
 	display:inline;
 	float:left;
 }
+#border{
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #009900;
+	margin: auto;
+}
 .right {
-	margin-left: 590px;
-	margin-top: -74px;
+	position: relative;
+	left: 500px;
+	top: -68px;
 	width: 377px;
 	height: 95px;
 }
@@ -38,6 +49,12 @@ li{
 	font-weight: 700;
 	color: #FFF
 }
+.right .tool{
+	position: relative;
+	left: 100px;
+	top: -46px;
+	margin-left: 37px;
+}
 
 .right #message{
 	padding:2px;
@@ -52,10 +69,11 @@ li{
 }
 
 .nav{
-	width:1000px;
-	height:39px;
-	margin:auto;
-	background-image:url(../images/nav1.png);
+	width: 1000px;
+	height: 39px;
+	margin: auto;
+	background-image:url(../images/nav.png);
+	border: 1px solid #FFFFFF;
 }
 .nav img{
 	padding-left: 138px;
@@ -80,8 +98,29 @@ padding-top: 12px;
 	font-size:15px;
 	color:#333333;
 }
-.nav li #choose{
+.nav #choose{
 	color:#006600;
+}
+.nav span{
+	position: relative;
+	top: 8px;
+	left:46px;
+	font-family:微软雅黑;
+	font-size:15px;
+	color:#333333;
+	text-align: center;
+}
+.nav #span2{
+	left: 150px;
+}
+.nav #span3{
+	left: 230px;
+}
+.nav #span4{
+	left: 310px;
+}
+.nav .spanother{
+	width: 176px;
 }
 .content{
 	position: relative;
@@ -93,18 +132,17 @@ padding-top: 12px;
 
 .content #titlediv{
 	position: relative;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	top: 10px;
 	width: 977px;
 	height: 30px;
 	background-color: #ffffff;
 }
-.content #title{
+.content #titlediv #title{  
 	position: relative;
-	left: 26px;
-	top: 4px;
-	width: 100px;
-	height: 20px;
+	left: 12px;
+	top: 5px;
 	font-family: 微软雅黑;
 	font-size: 14px;
 	color: #009900;
