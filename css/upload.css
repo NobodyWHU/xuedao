@@ -208,6 +208,18 @@ padding-top: 12px;
 	color: #909090;
 }
 
+.content #uploadinfo span{
+	margin-left: 43px;
+	margin-top: 10px;
+	font-family: 宋体;
+	font-size: 12px;
+	color: #909090;
+}
+
+.content #uploadinfo #tooldiv{
+	margin-top: 10px;
+}
+
 .content #docinfo{
 	position:relative;
 	top:4px;
@@ -292,7 +304,7 @@ margin-top: 16px;
 .content #coverinfo{
 	position: relative;
 	left: 602px;
-	top: -245px;
+	top: -290px;
 	height: 334px;
 	width: 384px;
 }
