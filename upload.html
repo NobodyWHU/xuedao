@@ -52,14 +52,14 @@
 			<span id="title">上传文档</span>
 		</div>
 		<div id="hint">
-			<img src="images/icon-amazing.png" />
+			<img src="images/icon-amazing.png" id="icon" />
 			<p>
 				文档已上传，请确认后点击 <b>保存</b>
 			</p>
 		</div>
 		<p id="filename">沁园春 长沙 课件</p>
 		<div id="progress">
-			进度条
+			<img src="images/progress.png" />&nbsp;&nbsp;<span id="progressvalue">100%</span>
 		</div>
 		<img id="cancel" src="images/cancel.png" />
 		<div id="uploadinfo">
@@ -142,7 +142,7 @@
 </form>
 <form id="coverinfo" action="#" enctype="multipart/form-data">
 	<label for="uploadcover">上传封面:
-		<input type="text" id="uploadcover" name="cover" /><button>浏览...</button>
+		<input type="text" id="uploadcover" name="cover" value="上传封面" /><button>浏览...</button>
 	</label>
 	<img id="preview" src="" /> 
 	<input class="underline" type="submit" value="确认裁剪并提交" />
@@ -151,5 +151,27 @@
 </div>
 </div>
 <!-- end of content -->
+<!-- <div class="footer">
+	<div id="link">
+
+
+	</div>
+
+</div> -->
+<div class="footer">
+  <p id="firstline">
+  	<a href="#">使用帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#">合作伙伴</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#">产品介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#">下载中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  	<a href="#" id="QQ" onfocus=this.blur(); ><img src="images/QQ.png" /></a>
+  </p>
+  <p id="secondline">
+  Copyright&nbsp;&nbsp;学道100&nbsp;&nbsp;www.xuedao100.com.&nbsp;&nbsp;&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;鄂ICP备10211471号
+  </p>
+</div>
+<!-- end of footer -->
 </body>
 </html>

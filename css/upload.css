@@ -127,7 +127,9 @@ padding-top: 12px;
 	width: 1000px;
 	height: 632px;
 	margin: 16px auto 0px auto;
-	background-color: #F4F4F4
+	background-color: #F4F4F4;
+	border-top: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
 }
 
 .content #titlediv{
@@ -155,7 +157,7 @@ padding-top: 12px;
 	width: 978px;
 	height: 32px;
 }
-.content img{
+.content #icon{
 	position:relative;
 	left:12px;
 	top:6px;
@@ -176,12 +178,20 @@ padding-top: 12px;
 	color: #333333;
 }
 .content #progress{
-	width: 648px;
+	width: 750px;
 	height: 32px;
 	position: relative;
 	top: 28px;
 	left: 43px;
-	background-color: #33CC00;
+	/*background-color: #33CC00;*/
+}
+
+.content #progress #progressvalue{
+	position: relative;
+	top: -5px;
+	font-family: 微软雅黑;
+	font-size: 30px;
+	color: #999999;
 }
 .content #cancel{
 	position: relative;
@@ -209,7 +219,9 @@ padding-top: 12px;
 }
 
 .content #uploadinfo span{
-	margin-left: 43px;
+	position: relative;
+	left: -55px;
+	margin-left: 100px;
 	margin-top: 10px;
 	font-family: 宋体;
 	font-size: 12px;
@@ -298,7 +310,7 @@ margin-top: 16px;
 }
 .content form #certainsave{
 	position: relative;
-	top: 60px;
+	top: 40px;
 	left: 36px;
 }
 .content #coverinfo{
@@ -315,10 +327,40 @@ margin-top: 16px;
 .content #coverinfo img{
 	width: 220px;
 	height: 155px;
-	margin-left: 85px;
+	margin-left: 97px;
 }
 
 .content #coverinfo .underline{
 	margin-left: 97px;
 	margin-top: 15px;
+}
+
+.footer{
+	width: auto;
+	height: 89px;
+	margin-top: 12px;
+	border-top: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+	background-color: #DADADA;
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #4E4D4B;
+}
+
+.footer #firstline{
+	width: 550px;
+	margin: 24px auto;
+}
+
+.footer #QQ{
+	position: relative;
+	top: 4px;
+	border:none;
+}
+.footer #secondline{
+	position: relative;
+	left: -25px;
+	bottom: 10px;
+	width: 500px;
+	margin: 0 auto;
 }
