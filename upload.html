@@ -13,7 +13,7 @@
 </head>
 
 <body background="images/background.png">
-<div id="border"></div>
+	<div id="border"></div>
 	<div id="header">
 		<div id="logo">
 			<img src="images/title.png" />
@@ -25,26 +25,34 @@
 			<div id="name">
 				<a herf="#">王浩然</a>
 			</div>
-					<a class="tool" herf="#">
-						<img id="download" src="images/download.png" />
-					</a>
-					<a class="tool" herf="#">
-						<img id="message" src="images/message.png" />
-					</a>
-					<a class="tool" herf="#">
-						<img id="setting" src="images/setting.png" />
-					</a>
-					<a class="tool" herf="#">
-						<img id="logout" src="images/logout.png" />
-					</a>
+			<a class="tool" herf="#">
+				<img id="download" src="images/download.png" />
+			</a>
+			<a class="tool" herf="#">
+				<img id="message" src="images/message.png" />
+			</a>
+			<a class="tool" herf="#">
+				<img id="setting" src="images/setting.png" />
+			</a>
+			<a class="tool" herf="#">
+				<img id="logout" src="images/logout.png" />
+			</a>
 		</div>
 	</div>
 	<!--  end of header -->
 	<div class="nav">
-		<span id="choose"><a>首页</a></span>
-		<span class="spanother" id="span2"><a>家校互动中心</a></span>
-		<span class="spanother" id="span3"><a>教学资源中心</a></span>
-		<span class="spanother" id="span4"><a>管理中心</a></span>
+		<span id="choose">
+			<a>首页</a>
+		</span>
+		<span class="spanother" id="span2">
+			<a>家校互动中心</a>
+		</span>
+		<span class="spanother" id="span3">
+			<a>教学资源中心</a>
+		</span>
+		<span class="spanother" id="span4">
+			<a>管理中心</a>
+		</span>
 	</div>
 	<!-- end of nav -->
 	<div class="content">
@@ -59,14 +67,16 @@
 		</div>
 		<p id="filename">沁园春 长沙 课件</p>
 		<div id="progress">
-			<img src="images/progress.png" />&nbsp;&nbsp;<span id="progressvalue">100%</span>
+			<img src="images/progress.png" />
+			
+			<span id="progressvalue">100%</span>
 		</div>
 		<img id="cancel" src="images/cancel.png" />
 		<div id="uploadinfo">
 			<div id="tooldiv">
-			<span>上传速度</span>
-			<span>已上传</span>
-			<span>剩余时间</span>
+				<span>上传速度</span>
+				<span>已上传</span>
+				<span>剩余时间</span>
 			</div>
 		</div>
 
@@ -137,40 +147,46 @@
 	<span class="waitTags">报告2</span>
 	<span class="waitTags">报告3</span>
 	<span class="waitTags">报告4</span>
-	</br>
-	<input id="certainsave" type="image" src="images/savebutton.png" />
+</br>
+<input id="certainsave" type="image" src="images/savebutton.png" />
 </form>
 <form id="coverinfo" action="#" enctype="multipart/form-data">
-	<label for="uploadcover">上传封面:
-		<input type="text" id="uploadcover" name="cover" value="上传封面" /><button>浏览...</button>
-	</label>
-	<img id="preview" src="" /> 
-	<input class="underline" type="submit" value="确认裁剪并提交" />
-	<button>取消</button>
+<label for="uploadcover">
+	上传封面:
+	<input type="text" id="uploadcover" name="cover" value="上传封面" />
+	<button>浏览...</button>
+</label>
+<img id="preview" src="" />
+<input class="underline" type="submit" value="确认裁剪并提交" />
+<button>取消</button>
 </form>
 </div>
 </div>
 <!-- end of content -->
 <!-- <div class="footer">
-	<div id="link">
+<div id="link"></div>
 
-
-	</div>
-
-</div> -->
+</div>
+-->
 <div class="footer">
-  <p id="firstline">
-  	<a href="#">使用帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#">合作伙伴</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#">产品介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#">下载中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  	<a href="#" id="QQ" onfocus=this.blur(); ><img src="images/QQ.png" /></a>
-  </p>
-  <p id="secondline">
-  Copyright&nbsp;&nbsp;学道100&nbsp;&nbsp;www.xuedao100.com.&nbsp;&nbsp;&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;鄂ICP备10211471号
-  </p>
+<p id="firstline">
+<a href="#">使用帮助</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">关于我们</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">合作伙伴</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">产品介绍</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">下载中心</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">关于我们</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<img id="QQ" src="images/QQ.png" />
+</p>
+<p id="secondline">
+Copyright&nbsp;&nbsp;学道100&nbsp;&nbsp;www.xuedao100.com.&nbsp;&nbsp;&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;鄂ICP备10211471号
+</p>
 </div>
 <!-- end of footer -->
 </body>

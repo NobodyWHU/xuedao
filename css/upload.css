@@ -27,7 +27,7 @@ li{
 	left: 500px;
 	top: -68px;
 	width: 377px;
-	height: 95px;
+	/*height: 95px;*/
 }
 #logo {
 	position:relative;
@@ -189,6 +189,7 @@ padding-top: 12px;
 .content #progress #progressvalue{
 	position: relative;
 	top: -5px;
+	left: 20px;
 	font-family: 微软雅黑;
 	font-size: 30px;
 	color: #999999;
@@ -269,7 +270,7 @@ padding-top: 12px;
 }
 .content form .small{
 	width: 110px;
-margin-top: 16px;
+	margin-top: 16px;
 }
 
 .content form #intro{
